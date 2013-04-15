@@ -2,11 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: http://google.com/search
+url: http://Joybox.io
+title: Joybox
+author: Juan José Karam
+simple_search:
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -16,11 +15,11 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: /Joybox/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
-
+sidebar: collapse
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
@@ -29,12 +28,23 @@ email:
 root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public
+destination: public/Joybox
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
+markdown: redcarpet
+redcarpet:
+  extensions: ["hard_wrap",
+               "no_intra_emphasis",
+               "tables",
+               "fenced_code_blocks",
+               "autolink",
+               "strikethrough",
+               "lax_spacing",
+               "space_after_headers",
+               "with_toc_data",
+               "xhtml"]
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/

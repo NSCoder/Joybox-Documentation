@@ -21,11 +21,7 @@ module HighlightCode
       if File.exist?(path)
         highlighted_code = File.read(path)
       else
-        begin
-          highlighted_code = Pygments.highlight(code, :lexer => lang, :formatter => 'html', :options => {:encoding => 'utf-8'})
-        rescue MentosError
-          raise "Pygments can't parse unknown language: #{lang}."
-        end
+        highlighted_code = Pygments.highlight(code, :lexer => lang, :formatter => 'html', :options => {:encoding => 'utf-8'})
         File.open(path, 'w') {|f| f.print(highlighted_code) }
       end
     else
@@ -34,10 +30,9 @@ module HighlightCode
     highlighted_code
   end
   def tableize_code (str, lang = '')
-    table = '<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers">'
+    table = '<div class="highlight"><table><tr><td class="gutter">'
     code = ''
     str.lines.each_with_index do |line,index|
-      table += "<span class='line-number'>#{index+1}</span>\n"
       code  += "<span class='line'>#{line}</span>"
     end
     table += "</pre></td><td class='code'><pre><code class='#{lang}'>#{code}</code></pre></td></tr></table></div>"
