@@ -12,7 +12,21 @@ Joybox combines the most popular and widely used 2D game engine for iOS, Cocos2D
 
 ## Getting started
 
-A instalation using a gem is planned for the upcoming milestone, but right now you can start developing games just downloading the [demo application](https://github.com/rubymotion/Joybox/archive/master.zip) and modifying it to your needs.
+First install Joybox from RubyGems. Run:
+
+```ruby
+gem install joybox
+```
+
+Next, add to your Rakefile:
+
+```ruby
+require 'joybox'
+```
+
+## Examples
+
+If you are looking for some examples, see [Joybox Examples Repository](https://github.com/CurveBeryl/Joybox-Examples)
 
 ## Feedback and Help
 
@@ -22,7 +36,7 @@ For questions, feedback, bug reports, use the project's [Issue Tracker](https://
 
 Next items to being added to Joybox:
 
-* Bundle it into a Gem
+* Rake Tasks
 
 * Tutorials
 
