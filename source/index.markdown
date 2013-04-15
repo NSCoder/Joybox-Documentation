@@ -6,7 +6,7 @@ sharing: false
 footer: false
 ---
 
-## Video games are the passion, Ruby the languaje & Ruby Motion the platform
+## Video games are the passion, Ruby the language & Ruby Motion the platform
 
 Joybox combines the most popular and widely used 2D game engine for iOS, Cocos2D, folds in the amazing Box2D physics engine, and then wraps them up into a clean Ruby API that will make game development faster and more enjoyable for both beginners and experts alike.
 
@@ -34,7 +34,7 @@ For questions, feedback, bug reports, use the project's [Issue Tracker](https://
 
 ## Roadmap
 
-Next items to being added to Joybox:
+Next items being added to Joybox:
 
 * Rake Tasks
 
