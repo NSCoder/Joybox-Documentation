@@ -18,11 +18,45 @@ First install Joybox from RubyGems. Run:
 gem install joybox
 ```
 
-Next, add to your Rakefile:
+Next, install the templates and command
 
 ```ruby
-require 'joybox'
+joybox install
 ```
+
+Finally create a new project:
+
+```
+motion create --template=joybox-ios game
+
+#or
+
+motion create --template=joybox-osx game
+```
+
+# Creating Classes
+
+In this version you can generate Sprite, Layer and Scene subclasses and specs:
+
+```
+motion joybox:generate <class> <name>
+```
+
+## Troubleshoot Installation
+If you run into troubles running your Joybox game, please do the following in the root folder of your project:
+
+```
+gem uninstall joybox -a
+
+gem install joybox
+
+rm .repl_history
+
+rake clean
+
+rake
+```
+
 
 ## Examples
 
@@ -36,15 +70,16 @@ For questions, feedback, bug reports, use the project's [Issue Tracker](https://
 
 Next items being added to Joybox:
 
-* Rake Tasks
-
 * Tutorials
 
-* Complete the Cocos2D Actions
+* More Cocos2D Actions
 
-* Cocos2D Animations
+* Tools Support
 
-* Box2D Shapes
+* Test Suite
+
+* Full support for Box2D
+
 
 ## Contributions
 

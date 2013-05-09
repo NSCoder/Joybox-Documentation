@@ -71,7 +71,7 @@ action = Repeat.forever action:<action>
 ### A subclass of CCSequence
 
 ``` ruby
-action = Sequence.new items:<array of actions>
+action = Sequence.with actions:<array of actions>
 ```
 
 For more information, see: [Actions](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:actions) & [Actions: Composition](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:actions_composition)

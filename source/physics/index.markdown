@@ -72,38 +72,38 @@ This type of bodies are fully simulated and forces can be applied to them. Also 
 
 For more information, see: [Chapter 7 Bodies](http://box2d.org/manual.pdf)
 
-## Fixures
+## Fixtures
 
-The Fixures are used to give the body a shape, which is done implementing the following:
+The Fixtures are used to give the body a shape, which is done implementing the following:
 
 ``` ruby
 body = world.new_body position:[0, 0] do
 
-  # Edge Fixure: Add lines to the body shape
-  edge_fixure start_point: <start_point_of_the_line>,
+  # Edge Fixture: Add lines to the body shape
+  edge_fixture start_point: <start_point_of_the_line>,
                 end_point: <end_point_of_the_line>
 
 
-  # Polygon Fixure: Add poligons to the body shape
-  polygon_fixure box: <size_of_the_box>
+  # Polygon Fixture: Add poligons to the body shape
+  polygon_fixture box: <size_of_the_box>
 
 end
 ```
 
-Also the Fixures are used to give the body some of its physics properties:
+Also the Fixtures are used to give the body some of its physics properties:
 
 ```ruby
 body = world.new_body position:[0, 0] do
 
-  polygon_fixure box: [0.5, 0.5],
-                      # Default: 0.2
-                      friction: <friction>,
-                      # Default: 0
-                      restitution: <restitution>,
-                      # Default: 0
-                      density: <density>,
-                      # Default: false
-                      is_sensor: <bool>
+  polygon_fixture box: [0.5, 0.5],
+                       # Default: 0.2
+                       friction: <friction>,
+                       # Default: 0
+                       restitution: <restitution>,
+                       # Default: 0
+                       density: <density>,
+                       # Default: false
+                       is_sensor: <bool>
 
 end
 ```

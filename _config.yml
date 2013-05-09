@@ -28,7 +28,7 @@ sidebar: collapse
 root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public/joybox
+destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
