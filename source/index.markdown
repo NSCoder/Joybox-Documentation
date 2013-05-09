@@ -86,3 +86,10 @@ Next items being added to Joybox:
 ## Contributions
 
 The Joybox's swarm needs help to stop the madness! If you want to contribute to this goal, please go to the [Github page](https://github.com/rubymotion/Joybox), in there you will find all the information needed to start sending pull requests :D
+
+
+## 3rd Party Authors
+
+**Cocos2D**: Ricardo Quesada, Zynga and contributors [cocos2d for iPhone](http://www.cocos2d-iphone.org)
+
+**Box2D**: Erin Catto [Box2D | A 2D Physics Engine for Games](http://box2d.org)
