@@ -12,6 +12,8 @@ Joybox combines the most popular and widely used 2D game engine for iOS, Cocos2D
 
 ## Getting started
 
+Ruby Motion is required for using Joybox, its an amazing platform for creating iOS and OSX apps using Ruby! For install instructions: (http://www.rubymotion.com)
+
 First install Joybox from RubyGems. Run:
 
 ```ruby
