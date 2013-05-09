@@ -41,7 +41,7 @@ motion create --template=joybox-osx game
 In this version you can generate Sprite, Layer and Scene subclasses and specs:
 
 ```
-motion joybox:generate <class> <name>
+motion joybox:generate <sprite/layer/scene> <class_name>
 ```
 
 ## Troubleshoot Installation
