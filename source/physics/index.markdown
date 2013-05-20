@@ -8,7 +8,7 @@ footer: false
 
 ## Apply Realism
 
-### Collection of Box2D Clases
+### Collection of Box2D Classes
 
 ## Set up the World
 
@@ -62,7 +62,7 @@ body = world.new_body position:<point_on_the_screen>,
 The following are the available body types:
 
 * KStaticBodyType 
-The Static Bodies does not move under the simulation. Excelent for walls or static objects.
+The Static Bodies does not move under the simulation. Excellent for walls or static objects.
 
 * KKinematicBodyType
 A Kinematic Body is simulated according to its velocity, but it does not allow you to apply any force to it. The only way to interact with it is changing its velocity.
@@ -84,7 +84,7 @@ body = world.new_body position:[0, 0] do
                 end_point: <end_point_of_the_line>
 
 
-  # Polygon Fixture: Add poligons to the body shape
+  # Polygon Fixture: Add polygons to the body shape
   polygon_fixture box: <size_of_the_box>
 
 end
@@ -107,7 +107,7 @@ body = world.new_body position:[0, 0] do
 
 end
 ```
-Setting the physics properties per Fixure instead of setting them to the full object allow us to have complex fixures, for example: A cube with a one very hard size and 5 soft size that allow some bouncing.
+Setting the physics properties per Fixture instead of setting them to the full object allow us to have complex fixtures, for example: A cube with a one very hard size and 5 soft size that allow some bouncing.
 
 For more information, see: [Chapter 6 Fixures](http://box2d.org/manual.pdf)
 

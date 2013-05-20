@@ -21,7 +21,7 @@ end
 
 ## Initialization
 
-Create a new instante of a Layer:
+Create a new instance of a Layer:
 
 ``` ruby
 layer = MyLayer.new
@@ -75,7 +75,7 @@ schedule_update do |dt|
 end
 ```
 
-The other one is declaring a method for that purpuse:
+The other one is declaring a method for that purpose:
 ```ruby
 # Invoke the following method on the on_enter method
 schedule_update
