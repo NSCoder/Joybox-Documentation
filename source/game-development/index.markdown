@@ -8,7 +8,7 @@ footer: false
 
 ## Game Development Resources
 
-For being a great Game Developer, you must master a couple of disciplines. Here is a list of them with the resources needed to get you started as fast as posible:
+For being a great Game Developer, you must master a couple of disciplines. Here is a list of them with the resources needed to get you started as fast as possible:
 
 ## Game Development
 
@@ -35,7 +35,7 @@ A path of which kind of games you should do first to get some experience before 
 
 * [The Abstraction of Character](http://www.thatsaterribleidea.com/2009/11/abstraction-of-character.html)
 Theory
-A little taste about how to design our Characters Clases.
+A little taste about how to design our Character Classes.
 
 * [Implementing Tetris: Collision Detection](http://gamedev.tutsplus.com/tutorials/implementation/implementing-tetris-collision-detection/)
 AS3
@@ -51,7 +51,7 @@ A easy read about why we should we care about Algebra as game developers.
 
 * [Game Coding Complete](http://www.amazon.com/Game-Coding-Complete-Fourth-Edition/dp/1133776574/ref=dp_ob_title_bk)
 Book
-Everything about the game development process: Architecture, Audio, UI, Networking, etc. Its a intermediate level book and the examples are in C# and Lua, but if you want to get inmersed in what is really to make a game, this is the book.
+Everything about the game development process: Architecture, Audio, UI, Networking, etc. Its a intermediate level book and the examples are in C# and Lua, but if you want to get immersed in what is really to make a game, this is the book.
 
 * [Game Programming Gems](http://www.gameprogramminggems.com)
 Book
@@ -69,7 +69,7 @@ Some times its better to have a more solid background on mathematics and physics
 This book covers a lot of interesting topics about AI in video games. If your Final Boss is not evil enough, take a look at this.
 
 * [Game Engine Architecture](http://www.amazon.com/dp/1568814135/?tag=stackoverfl08-20)
-If you want to understand or maybe create a Video Game Engine, really good for fundations.
+If you want to understand or maybe create a Video Game Engine, really good for foundations.
 
 * [Game Development Stack Exchange](http://gamedev.stackexchange.com)
 Troubles? You can debug them in here.
@@ -80,7 +80,7 @@ This blog is not longer being updated but it has amazing articles about Game Dev
 
 * [Gamasutra](http://www.gamasutra.com)
 Site
-News, articles and tutorials about Game Development from Indi to AAA.
+News, articles and tutorials about Game Development from Indie to AAA.
 
 ## Game Design
 
@@ -104,7 +104,7 @@ An exercise of Game Design principles and advices.
 
 * [The Big List of Game Design](http://www.pixelprospector.com/the-big-list-of-game-design/)
 Site
-Articles, Books & Discusions about Game Design from Basics to Difficulty, Balance, Character Design, Level Design, etc. Anything you need to know about this discipline is in there.
+Articles, Books & Discussions about Game Design from Basics to Difficulty, Balance, Character Design, Level Design, etc. Anything you need to know about this discipline is in there.
 
 * [Rules for Games: Do & Don't 1](http://www.rockpapershotgun.com/2010/07/02/rules-for-games-do-dont-1/)
 Article
@@ -131,7 +131,7 @@ Understand the meaning of colors, their meaning and how we perceive them. Also l
 
 * [Graphic Style Analysis](http://www.blackgolem.com/component/content/article/33-graphics/119-graphic-style-analysis-part-1.html) 
 Article
-Understand the difference between the video game grafic styles in this 3 part article.
+Understand the difference between the video game graphic styles in this 3 part article.
 
 * [Pixel Art Tutorials](http://www.pixelprospector.com/the-big-list-of-pixel-art-tutorials/)
 Site
@@ -139,35 +139,35 @@ The easy way to create some art for your games is to use Pixel Art, here is a li
 
 * [Animation Tutorials](http://www.angryanimator.com/word/tutorials/)
 Site
-Short but valuable list of animation tutorials that covers some of the animation fundations.
+Short but valuable list of animation tutorials that covers some of the animation foundations.
 
 * [Royalty Free Music and Sounds](http://www.pixelprospector.com/the-big-list-of-royalty-free-music-and-sounds-free-edition/)
 Site
 List of the most popular sites to find royalty free sounds for our game.
 
 
-## Inspiration & Indi Game Development
+## Inspiration & Indie Game Development
 
 History, Culture and Inspiration of the Game Development Industry
 
 * [Indie Game](http://en.wikipedia.org/wiki/Indie_game)
 Wikipedia
-What is a Indi Game?
+What is a Indie Game?
 
 * [Independent Video Game Development](http://en.wikipedia.org/wiki/Indie_game_development)
 Wikipedia
-What is a Indi Game Developer?
+What is a Indie Game Developer?
 
-* [Indi Game: The Movie](http://buy.indiegamethemovie.com/?referrer=http://www.google.com.mx/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CC4QFjAA&url=http%3A%2F%2Fwww.indiegamethemovie.com%2F&ei=vEprUeKgCIiA2gWGs4HIDQ&usg=AFQjCNEKwKX4swrz68Xe4xOqrOWwTtrmAw&sig2=HCcj1f-4pYVZ3C0H1M64nw&bvm=bv.45175338,d.b2I)
+* [Indie Game: The Movie](http://buy.indiegamethemovie.com/?referrer=http://www.google.com.mx/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CC4QFjAA&url=http%3A%2F%2Fwww.indiegamethemovie.com%2F&ei=vEprUeKgCIiA2gWGs4HIDQ&usg=AFQjCNEKwKX4swrz68Xe4xOqrOWwTtrmAw&sig2=HCcj1f-4pYVZ3C0H1M64nw&bvm=bv.45175338,d.b2I)
 Movie
 This is a must watch movie if you are into Game Development, it has all the inspiration you need to finish your game.
 
 * [TIGForums](http://forums.tigsource.com/index.php)
 Forum
-Get in the loop with the Indi community.
+Get in the loop with the Indie community.
 
 * [9 Steps to Self Publishing Your First Indie Game](http://indiebits.com/self-publishing-steps/)
-Guide and Advice about how to publish your first Indi Game.
+Guide and Advice about how to publish your first Indie Game.
 
 * [Should working in games be more fun?](http://www.gamedev.net/page/resources/_/business/should-working-in-games-be-more-fun-r866)
 Article
@@ -200,13 +200,13 @@ The complete history of Video Games.
 
 ## Game Jams :D
 
-The best way of learning how to make video games is doing it! The game developer community has some events called Game Jams, which is entire purpuse is to create a game with a set of rules about the time frame, topic of the game, etc. Some of the game jams are competitions while others are just for the purpose of sharing.
+The best way of learning how to make video games is doing it! The game developer community has some events called Game Jams, which is entire purpose is to create a game with a set of rules about the time frame, topic of the game, etc. Some of the game jams are competitions while others are just for the purpose of sharing.
 
 If you want to connect with the Game Developer Community, this is the best way to get involved:
 
 * [Ludum Dare](http://www.ludumdare.com)
 Online
-The most famous Game Jam, it has two formats compo y ludum: the difference is only the strictness of the rules. A very helpfull community and a lot of competitors around the globe.
+The most famous Game Jam, it has two formats compo y ludum: the difference is only the strictness of the rules. A very helpful community and a lot of competitors around the globe.
 
 * [Global Game Jam](http://globalgamejam.org)
 Presential
