@@ -23,7 +23,7 @@ world = World.new gravity:<point_with_gravity_direction_and_force>,
                   # Default: true
                   allows_sleeping: <bool>,
                   # Default: true
-                  continuos_physics: <bool>
+                  continuous_physics: <bool>
 ```
 
 ## Step

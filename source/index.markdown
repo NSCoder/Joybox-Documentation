@@ -29,12 +29,36 @@ joybox install
 Finally create a new project:
 
 ```
-motion create --template=joybox-ios game
+motion create --template=joybox-ios <name>
 
 #or
 
-motion create --template=joybox-osx game
+motion create --template=joybox-osx <name>
 ```
+
+# REPL Support
+
+To enable the REPL in your proyect, please configure the following way in the app_delegate:
+
+```ruby
+@director = Joybox::Configuration.setup do
+	debug repl:true
+end
+```
+
+Warning: The REPL support will hit your game performance (aka Frames per Second), so please turn it off for shipping and performance tests.
+
+
+Also you can test it without having a to create a game, using one of the following templates:
+
+```
+motion create --template=joybox-ios-example-repl <name>
+motion create --template=joybox-osx-example-repl <name>
+```
+
+See it in action:
+[RubyMotion's Joybox - REPL Demo](https://vimeo.com/66042521)
+
 
 # Creating Classes
 
