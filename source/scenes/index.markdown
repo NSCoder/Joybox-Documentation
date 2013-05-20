@@ -11,7 +11,7 @@ footer: false
 
 ## Subclassing
 
-In order to present the Layers on the screen you need to subclass the Scene class, which is acomplished by the following:
+In order to present the Layers on the screen you need to subclass the Scene class, which is accomplished by the following:
 
 ``` ruby
 class MyScene < Joybox::Core::Scene
@@ -21,7 +21,7 @@ end
 
 ## Initialization
 
-Create a new instante of a Scene:
+Create a new instance of a Scene:
 
 ``` ruby
 scene = MyScene.new
