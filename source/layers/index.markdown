@@ -36,6 +36,7 @@ The set up and tear down of any of the objects related to the Layer (like the Sp
 ``` ruby
 def on_enter
   # Initialize objects like Sprites
+  # Configure event-handling
 end
 
 def on_exit
@@ -43,7 +44,11 @@ def on_exit
 end
 ```
 
-## Handle User Touches
+## Handling Events
+
+[Event](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSEvent_Class/Reference/Reference.html) is an instance of NSEvent
+
+### User Touches
 
 Handle any state of the user interaction on the screen:
 
@@ -55,13 +60,47 @@ end
 on_touches_moved do |touches, event|
 
 end
- 
+
 on_touches_ended do |touches, event|
 
 end
 
 on_touches_cancelled do |touches, event|
 
+end
+```
+
+### Mouse Events
+
+```ruby
+on_mouse_down do |event, button|
+  puts "on_mouse_down #{event} #{button}"
+end
+
+on_mouse_dragged do |event, button|
+  puts "on_mouse_dragged #{event} #{button}"
+end
+
+on_mouse_up do |event, button|
+  puts "on_mouse_up #{event} #{button}"
+end
+
+on_mouse_scroll do |event, button|
+  puts "on_mouse_scroll #{event} #{button}"
+end
+```
+
+### Keyboard Events
+
+```ruby
+on_key_down do |event|
+  puts "on_key_down #{event}"
+  puts "#{event.keyCode} #{event.characters} #{event.charactersIgnoringModifiers} #{event.modifierFlags}"
+end
+
+on_key_up do |event|
+  puts "on_key_up #{event}"
+  puts "#{event.keyCode} #{event.characters} #{event.charactersIgnoringModifiers} #{event.modifierFlags}"
 end
 ```
 
