@@ -88,6 +88,14 @@ end
 on_mouse_scroll do |event, button|
   puts "on_mouse_scroll #{event} #{button}"
 end
+
+on_mouse_entered do |event|
+  puts "on_mouse_enter #{event}"
+end
+
+on_mouse_exited do |event|
+  puts "on_mouse_exited #{event}"
+end
 ```
 
 ### Keyboard Events
