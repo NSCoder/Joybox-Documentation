@@ -1,0 +1,52 @@
+---
+layout: default
+title: Joybox - Videogames are the passion, Ruby the language and RubyMotion the platform
+css: /css/home.css
+---
+
+<section id="intro">
+	<h1><span>Video games</span> are the <span>passion,</span><p><span>Ruby</span> the language and <span>RubyMotion</span> the platform</p></h1>
+	<article>
+		<a href="{{ site.baseurl }}/get-started" class="yellowbutton">START HERE</a>
+		<p>Joybox combines the most popular and widely used 2D game engine for iOS, Cocos2D, folds in the amazing Box2D physics engine, and then wraps them up into a clean Ruby API that will make game development faster and more enjoyable for both beginners and experts alike.</p>
+	</article>
+</section>
+<section id="features">
+	<article><img src="{{ site.baseurl }}/images/easytouse.png"><p>Easy to <span>Use</span></p></article>
+	<article><img src="{{ site.baseurl }}/images/versatile.png"><p><span>Versatile</span></p></article>
+	<article><img src="{{ site.baseurl }}/images/foreverfree.png"><p>Forever<span> Free</span></p></article>
+	<article><img src="{{ site.baseurl }}/images/funtobuild.png"><p><span>Fun</span> to build</p></article>
+	<article><img src="{{ site.baseurl }}/images/investable.png"><p><span>Investable</span></p></article>
+</section>
+<section id="trythis">
+	<h2>Try <span>this!</span></h2>
+	<section id="levels">
+		<article>
+			<img src="{{ site.baseurl }}/images/easy.png">
+			<h4>EASY</h4><p>Rush into the Game Architecture: Sprite, Layers and Scenes, also look at the principles of collision detection in this fast building game.</p>
+		</article>
+		<article>
+			<img src="{{ site.baseurl }}/images/normal.png">
+			<h4>NORMAL</h4><p>Reload your game with realism using Physics, upgrade your collision detection and explore the deeps of the Game Loop - Coming Soonish</p>
+		</article>
+		<article>
+			<img src="{{ site.baseurl }}/images/hardcore.png">
+			<h4>HARDCORE</h4><p>The final stage is waiting: Master the Game Objects, Animations, Maps and Screen Controls on this exciting one by one challenges - Coming Soonish</p>
+		</article>
+	</section>
+	<a href="{{ site.baseurl }}/learn-this" class="yellowbutton">PRESS START</a>
+</section>
+<section id="blog">
+	{% include sidebar_menu %}
+	<section id="blogcontent">
+		<h3>NEW RELEASES</h3>
+		{% for post in site.posts limit: 3 %}
+			<article>
+				<p>{{ post.date | date_to_string | upcase }}</p>
+				<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+				<h5>{{ post.excerpt }}</h5>
+			</article>
+		{% endfor %}
+		<section><a class="back" href="{{ site.baseurl }}/version-history">VERSION HISTORY</a></section>
+	</section>
+</section>

@@ -1,0 +1,22 @@
+---
+layout: default
+css: /css/version-history.css
+---
+
+<section id="title">
+  <h1>Version History</h1>
+</section>
+<section id="blog">
+  {% include sidebar_menu %}
+  <section id="blogcontent">
+    <h4>RELEASE</h4>
+    <article>
+      <p>{{ page.date | date_to_string | upcase }}</p>
+      <h2><a>{{ page.title }}</a></h2>
+      <h5>{{ content }}</h5>
+    </article>
+    <section>
+      <a class="back" href="{{ site.baseurl }}/version-history">VERSION HISTORY</a>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,32 @@
+---
+layout: default
+css: /css/learn-this/learn-this-page.css
+---
+<section id="title">
+  <h1>Learn This!</h1>
+</section>
+<section id="blog">
+  {% assign side_bar_image = page.kind | append: '-' | append: page.level | append: '.png' %}
+  <section id="theme" style="background: url('{{ site.baseurl }}/images/{{ side_bar_image | downcase }}') no-repeat center 20px, #660000;">
+    <h4>Round {{ page.round }}: {{ page.kind }}<span>{{ page.subject }}</span></h4>
+    <p>{{ page.summary }}</p>
+    <a href="{{ site.baseurl }}/learn-this/{{ page.level | downcase }}">Return to {{ page.level }} Path</a>
+  </section>
+  <section id="content">
+    <h4>{{ page.subtitle | upcase }}</h4>
+    <article>
+      <h2>{{ page.title }}</h2>
+      <p>{{ content }}</p>
+    </article>
+    {% unless page.round == 1 %}
+      {% assign previous_round = page.round | minus: 1 %}
+      {% assign previous_page_url = page.level | append: '/round-' | append: previous_round | downcase %}
+      <div class="previous"><a href="{{ site.baseurl }}/learn-this/{{ previous_page_url }}">PREVIOUS</a></div>
+    {% endunless %}
+    {% unless page.last-round %}
+      {% assign next_round = page.round | plus: 1 %}
+      {% assign next_page_url = page.level | append: '/round-' | append: next_round | downcase %}
+      <div class="next"><a href="{{ site.baseurl }}/learn-this/{{ next_page_url }}">NEXT</a></div>
+    {% endunless %}
+  </section>
+</section>

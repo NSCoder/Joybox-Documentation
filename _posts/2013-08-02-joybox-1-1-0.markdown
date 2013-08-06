@@ -1,0 +1,170 @@
+---
+layout: post
+title: Joybox 1.1.0
+date:   2013-08-02
+categories: version-history
+---
+
+After two months from our last release, 1.1.0 is finally here! It contains a lot of new features and bug fixes that will help to make the game development experience more enjoyable.
+
+But first we want so say thank you to all the contributors of this version for their pull requests or bug reports, continue being awesome!
+
+* Kenichi Yonekawa, yonekawa
+* Earl St Sauver, estsauver
+* Denis Laprise, nside
+* Franklin Webber, burtlo
+* Andrew Currie, AndrewCurrie
+* Jamon Holmgren, jamonholmgren
+* Christopher David Yudichak, TheOddLinguist
+* Donald Hutchison, rkachowski
+* Didier Prophete, dprophete 
+* Severin Schoepke, severin
+* awdogsgo2heaven
+* Juha Litola, jlitola
+* David Padilla, dabit 
+* PanPan, ippan
+* Keyvan Fatehi, keyvanfatehi
+* n-studio
+
+Also we want to announce that Joybox now have a [Google Groups](https://groups.google.com/forum/#!forum/joybox-wrapper) in order to make easier to find help, and a [G+ Community](https://plus.google.com/u/0/communities/114765779531190468427) created by [Evgeny Gorbachev](https://plus.google.com/u/0/105343357982894865403/posts) in which He upload some amazing examples, thank you Evgeny!
+
+### Installation
+The only thing needs to be done is to update the gem:
+
+```ruby
+gem update joybox
+```
+
+Now the commands and templates are installed automatically, so there is no need to run anything else. Thank you [Watson](https://github.com/Watson1978/motion-seppuku)!
+
+### Web Site
+We think the Joybox site deserve a little make over, to include a more complete documentation, some tutorials and also a special space for recognizing the people that makes this project special. We hope that you like it and find it useful!
+
+Also from our own experience some times it's needed to have the documentation locally, thats why we think it was a good idea to have a docset, so here it is: [Joybox Docset](dash-feed://http%3A%2F%2Fjoybox.io%2Fdocset%2FJoybox.xml). Also if you want to be included by default in Dash, you can request it here: [Dash Contact](http://kapeli.com/contact).
+
+Finally we want to thank our awesome designer: [Sandra de la Re](http://sandradelare.com) for the effort and the passion that she invested in the project. 
+
+To [Delisa Mason](https://twitter.com/kattrali) and [Colin T.A. Gray](https://twitter.com/colinta) for helping us reviewing the documentation, and our english >_<
+
+### Physics
+The physics module of Joybox was a little behind from the rest, well we improve it the best we can adding the following features to it:
+
+* All the methods available in World, Body, Fixture, Shape. And now all of them respond on pixel coordinates instead of metric system.
+
+* Complete support for all the Shapes and Listeners!
+
+* New features added like Filter's, AABB computations and more.
+
+* What is a physics environment without ray casts and queries? Now they are included as well.
+
+* Evolve on collision detection system to support physics sprites.  No more crazy body identification.
+
+* You asked and we listen. Experimental support for actions on physics sprites!
+
+But thats not all of it! We included a debug support for the Physics Environment allowing it to draw the entire physics world and manipulate it through the REPL, here is a little video:
+
+<iframe src="http://player.vimeo.com/video/71388927" width="500" height="372" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+[more-information] For more information on this new features or how to enable the Physics Debug, see: [Joybox Documentation](../../documentation)
+
+### Effects and Background Music
+A little late on this one, but now is available! Add background music or special effects to your game with this Audio related classes: BackgroundAudio and AudioEffect.
+
+### Tile Maps Support
+This version add support for the famous tool to create TMX maps: [Tiled](http://www.mapeditor.org). Design your game levels, add some collisions or collectables on this awesome tool and then import them to your game as easy as presenting a Sprite.
+
+### Actions
+Finally they are complete! From a simple Move.by to a Wave 3D, all of them are included in this version:
+
+|   |   |   |
+|:--|:--|:--|
+| [more-information][Animation](../../documentation/animation) | [more-information][Bezier](../../documentation/bezier) | [more-information][Blink](../../documentation/blink) |     
+| [more-information][Callback](../../documentation/callback) | [more-information][Delay](../../documentation/delay) | [more-information][Ease](../../documentation/ease) | 
+| [more-information][Fade](../../documentation/fade) | [more-information][Jump](../../documentation/jump) | [more-information][Liquid](../../documentation/liquid) | 
+| [more-information][Move](move) | [more-information][Place](../../documentation/place) | [more-information][Repeat](../../documentation/repeat) | 
+| [more-information][Rotate](../../documentation/rotate) | [more-information][Scale](../../documentation/scale) | [more-information][Sequence](../../documentation/sequence) |
+| [more-information][Shuffle](../../documentation/shuffle) | [more-information][Skew](../../documentation/skew) | [more-information][Spawn](../../documentation/spawn) | 
+| [more-information][Split](../../documentation/split) | [more-information][Tint](../../documentation/tint) | [more-information][Turn](../../documentation/turn) |  
+| [more-information][Twirl](../../documentation/twirl) | [more-information][Visibility](../../documentation/visibility) | [more-information][Wave](../../documentation/wave) |  
+
+### Gestures
+A little upgrade to the user interaction on the Mac adding the Magnify, Smart Magnify, Rotate and Swipe gestures!
+
+[more-information] For more information, see: [Layer documentation page](../../documentation/layer).
+
+### Commands
+In this version is included another command for creating a retina version of the TMX Map! 
+
+```
+$ motion joybox:retina map.tmx
+```
+
+It can also create a retina version of any image you pass as parameter, this is only for testing purposes so you don't have to scale them manually!
+
+### Sprites
+Now is supported to store information on the sprite for later use:
+
+```ruby
+# You can add it in the options
+sprite = Sprite.new file_name: 'space_ship.png', speed: 200, health: 10
+
+# Or a time after
+sprite[:boost] = 'heavy'
+
+# And retrieve and update them
+sprite[:health] -= 10
+```
+
+[more-information] For more information, see: [Sprite documentation page](../../documentation/sprite).
+
+### Source Code
+Here are the source code improvements to Joybox:
+
+* Improved code style and readability.
+
+* Increased performance in certain places where it was needed.
+
+* Removed the **joybox install** command, now the templates and commands are automatically installed.
+
+* Added 218 specifications and 617 requirements (about 75% of the project) to guaranty compatibility and increase the documentation available.
+
+### Critical Changes
+For all of this to happen, some changes have to be made:
+
+#### Node
+The method add_childs is now add_children.
+
+#### SpriteFrameCache
+Now the method where starts from 1 instead of 0.
+
+#### Animation
+The method delay is now delay_units, and total_Delay is now delay_per_unit.
+
+#### Menu
+The method align_items_in_columns now receive an array for defining how many columns and how many items in which of them.
+
+#### Physics
+Now every object returns their values in pixel coordinates and degrees, if you still need to use the metric values you can access them with the prefix metric_, for example: metric_position.
+
+#### World
+The Method continuos_physics is now deprecated.
+
+#### Physics Collisions
+Now for use when_collide method of the World instance, you need to pass an instance of a PhysicsSprite and it will return in the block the colliding physics sprite if available, or the body that is colliding. Example:
+
+```ruby
+@world.when_colide physics_sprite do |collision_sprite, is_touching|
+
+end
+```
+
+If you still need to get the collisions of the physics bodies you can use the following:
+
+```ruby 
+@world.on_collision do |first_body, second_body, is_touching| 
+
+end
+```
+
+#### Point
+The methods to and from pixel coordinates are now inverted, there was an incorrect naming.

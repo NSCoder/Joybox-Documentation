@@ -1,0 +1,48 @@
+---
+layout: default
+css: /css/documentation.css
+script: /scripts/documentation.js
+---
+
+<section id="title">
+  <h1>Documentation</h1>
+</section>
+<section id="blog">
+  <section id="themes">
+    <h3>WHAT WE GOT</h3>
+    
+    {% for link in site.pages %}
+      {% if link.categories == 'documentation' %}
+        
+        {% assign subtheme_style = 'display: none;' %} 
+        {% assign maintheme_class = 'maintheme' %}  
+        
+        {% if page.url == link.url %}
+          {% assign subtheme_style = 'display: block;' %}
+          {% assign maintheme_class = 'maintheme on' %}  
+        {% endif %}
+
+        <article class="{{ maintheme_class }}"><p>{{ link.title }}<br><span>{{ link.subtitle }}</span></p></article>
+        <article class="subtheme" style="{{ subtheme_style }}">
+        <a href="{{ site.baseurl | append:link.url | remove:'/index.html' }}">Description</a>
+        {% for anchor in link.anchors %}
+
+          {% assign anchor_link = site.baseurl | append:link.url | remove:'index.html' | append:'#' | append:anchor.name %}
+          {% if page.url == link.url %}
+            {% assign anchor_link = '#' | append: anchor.name %}
+          {% endif %}
+           
+           <a href="{{ anchor_link }}">{{ anchor.title }}</a>
+        {% endfor %}
+        </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+  <section id="content">
+    <h4>{{ page.subtitle | upcase }}</h4>
+    <article>
+      <h2>{{ page.title }}</h2>
+      <p>{{ content }}</p>
+    </article>
+  </section>
+</section>

@@ -1,0 +1,34 @@
+---
+layout: default
+title: Joybox - Version History
+css: /css/version-history.css
+---
+
+<section id="title">
+  <h1>Version History</h1>
+</section>
+<section id="blog">
+  {% include sidebar_menu %}
+  <section id="blogcontent">
+    <h4>RELEASES</h4>
+    {% for post in paginator.posts %}
+      <article>
+        <p>{{ post.date | date_to_string | upcase }}</p>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h5>{{ post.excerpt }}</h5>
+      </article>
+    {% endfor %}
+    <section>
+      {% if paginator.next_page %}
+        <div class="previous"><a href="{{ site.baseurl }}/version-history/{{ paginator.next_page }}">PREVIOUS</a></div>
+      {% endif %}
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <div class="next"><a href="{{ site.baseurl }}/version-history">NEXT</a></div>
+        {% else %}
+          <div class="next"><a href="{{ site.baseurl }}/version-history/{{paginator.previous_page}}">NEXT</a></div>
+        {% endif %}
+      {% endif %}
+    </section>
+  </section>
+</section>

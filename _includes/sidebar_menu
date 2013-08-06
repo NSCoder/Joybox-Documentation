@@ -1,0 +1,14 @@
+<section id="team">
+  <h3>MANTAINED BY</h3>
+    <article><p>Juan José Karam<br><a title="twitter" href="http://twitter.com/juankaram">@juankaram</a></p></article>
+    <article><p>Gabriel Sosa<br><a title="twitter" href="http://twitter.com/mexinsane">@mexinsane</a></p></article>
+  <section id="thanks">
+    <h3>SPECIAL THANKS TO</h3>
+    <article><a title="Cocos2D-iPhone" href="http://www.cocos2d-iphone.org">Cocos 2D</a><p>Ricardo Quesada, Zynga and contributors</p></article>
+    <article><a title="Box2D" href="http://box2d.org">Box2D</a><p>Erin Catto and contributors</p></article>
+  </section>
+  <article id="logos">
+    <a href="https://github.com/rubymotion/Joybox"><img src="{{ site.baseurl }}/images/github.png"></a>
+    <a href="http://www.rubymotion.com"><img src="{{ site.baseurl }}/images/rubymotion.png"></a>
+  </article>
+</section>  
