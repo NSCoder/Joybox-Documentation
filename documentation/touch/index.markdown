@@ -15,6 +15,16 @@ Returns the location of Touch on the screen:
 ```ruby
 on_touches_began do |touches, event|
 	touch = touches.any_object
-	p "The touch location is: {touch.location}"
+	p "Touch began at: #{touch.location.x}, #{touch.location.y}"
+end
+
+on_touches_moved do |touches, event|
+	touch = touches.any_object
+	p "Touch moved to: #{touch.location.x}, #{touch.location.y}"
+end
+
+on_touches_ended do |touches, event|
+	touch = touches.any_object
+	p "Touch ended at: #{touch.location.x}, #{touch.location.y}"
 end
 ```
