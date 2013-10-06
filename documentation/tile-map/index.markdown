@@ -19,20 +19,20 @@ tile_map = TileMap.new file_name: 'tile_map.tmx'
 self << tile_map
 ```
 
-In order to use the TileMap class is needed to include the **Joybox::TMX** module, which will also add the center_at method, allowing it to move to a particular map position even if it is larger than the bounds:
+Your layer would typically include a single TileMap. Assign it to the @tile_map instance variable and include the **Joybox::TMX** module, which adds the center_at method, allowing it to move to a particular map position even if it is larger than the bounds:
 
 ```ruby
 class MapLayer < Joybox::Core::Layer
 	include Joybox::TMX
 
 	def on_enter
-		tile_map = TileMap.new file_name: 'tile_map.tmx'
-		self << tile_map
-		
+		@tile_map = TileMap.new file_name: 'tile_map.tmx'
+		self << @tile_map
+
 		# The following point is outside the Layer bounds
 		outside_point = [1500, 1500]
 		center_at(outside_point)
-	end 
+	end
 end
 ```
 
@@ -68,7 +68,7 @@ tile_map.tiles_size = [32, 32]
 
 # The following is [32, 32]
 tile_map.tiles_size
-``` 
+```
 
 ### Orientation
 Retrieves or updates the TileMap orientation:
