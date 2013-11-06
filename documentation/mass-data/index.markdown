@@ -11,7 +11,7 @@ Represents the computed mass of a Shape or a Body.
 
 [more-information] For more information, see: [Body documentation page](../body#)
 
-[warning In order to update the Body, first its needed to retrieve it from its Mass Data method, change the desired values and finally set it again. but be careful it contains a lot of consistency validations.]
+[warning In order to update the Body, first its needed to retrieve it from its Mass Data method, change the desired values and finally set it again. But be careful it contains a lot of consistency validations.]
 
 ### Mass
 Gets or Sets the Mass in Kilograms:

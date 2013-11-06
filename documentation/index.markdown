@@ -11,7 +11,7 @@ You can also access the documentation offline, downloading the [Joybox Docset](d
 [tip If you are new to Joybox, can we recommend visit the 'Learn this' section first?]
 
 ### Essentials
-The every day classes are included in this section: Here you can find how configure the game, using the game loop, presenting scenes and layers, render sprites or getting the maximum of each of the frames per second using a sprite sheet.
+The every day classes are included in this section: Here you can find how to configure the game, use the game loop, present scenes and layers, render sprites or get the maximum of each of the frames per second using a sprite sheet.
 
 |   |   |   |
 |:--|:--|:--|
@@ -28,7 +28,7 @@ Build amazing introduction screens, settings sections, high scores or callouts f
 | [more-information][Menu Label](menu-label) |
 
 ### Actions & Animations
-Have fun while polishing your game using any of this amazing effects or animations: move your final stage boss, spawn some enemies here and there or why not adding a retro touch with a immunity blink?
+Have fun while polishing your game using any of these amazing effects or animations: move your final stage boss, spawn some enemies here and there or why not add a retro touch with an immunity blink?
 
 |   |   |   |
 |:--|:--|:--|

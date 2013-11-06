@@ -5,7 +5,7 @@ subtitle: Tiled Maps
 categories: documentation
 ---
 
-The ObjectLayer class represents a single object layer of the Tiled Map (TMX), the appropriate instances of this class will be created in the TileMap class when the map file is loaded. In order to access a particular instance, see: [TileMap documentation page](../tile-map).
+The ObjectLayer class represents a single object layer of the Tiled Map (TMX). The appropriate instances of this class will be created in the TileMap class when the map file is loaded. In order to access a particular instance, see: [TileMap documentation page](../tile-map).
 
 [warning The ObjectLayer class cannot be instantiated by itself, it is required to be created using the TileMap class.]
 

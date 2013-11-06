@@ -5,9 +5,9 @@ subtitle: Tiled Maps
 categories: documentation
 ---
 
-The TileLayer class represents a single tile layer of the Tiled Map (TMX), the instance of this class will be automatically created when the TileMap class loads the map file. For access a particular instance, see: [TileMap documentation page](../tile-map).
+The TileLayer class represents a single tile layer of the Tiled Map (TMX). The instance of this class will be automatically created when the TileMap class loads the map file. To access a particular instance, see: [TileMap documentation page](../tile-map).
 
-[warning The TileLayer class cannot be instantiated by itself, is required to be created using the TileMap class.]
+[warning The TileLayer class cannot be instantiated by itself, it is required to be created using the TileMap class.]
 
 [warning In order to use this class is required to include Joybox::TMX.]
 

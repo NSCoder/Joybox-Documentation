@@ -5,9 +5,9 @@ subtitle: Essentials
 categories: documentation
 ---
 
-The Sprite Batch class enables the batch drawing on all of items added as children, this will increase the performance and the memory utilization of the game. In order to accomplish this, the Sprite Batch needs to be loaded with a sprite sheet image.
+The Sprite Batch class enables the batch drawing of all the items added as children. This will increase the performance and the memory utilization of the game. In order to accomplish this, the Sprite Batch needs to be loaded with a sprite sheet image.
 
-Another thing that the SpriteBatch needs to know is where in the sprite sheet, a particular sprite is placed (known as frame). For this another class comes into play: the SpriteFrameCache class contains all the necessary information about every frame in the sprite sheet.
+Another thing that the SpriteBatch needs to know is where in the sprite sheet a particular sprite is placed (known as frame). For this another class comes into play: the SpriteFrameCache class contains all the necessary information about every frame in the sprite sheet.
 
 [more-information] For more information: see: [Sprite Frame Cache documentation page](../sprite-frame-cache).
 

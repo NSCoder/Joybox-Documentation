@@ -57,7 +57,7 @@ Aligns the menu items in columns:
 menu.align_items_in_columns [2, 1]
 ```
 
-The past example arranges two items in the first column and one in the second column.
+The previous example arranges two items in the first column and one in the second column.
 
 ### Align Items in Rows
 Arranges the menu items in rows:

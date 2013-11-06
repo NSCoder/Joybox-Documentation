@@ -5,15 +5,15 @@ subtitle: Essentials
 categories: documentation
 ---
 
-Its main responsibility is to manage the game flow: presenting and dismissing Scenes. Also its to initialize the OpenGL context, setting the Pixel Format, the Buffer Depth and controlling the Game Projection.
+Its main responsibility is to manage the game flow: presenting and dismissing Scenes. Also it initializes the OpenGL context, sets the Pixel Format, the Buffer Depth and controls the Game Projection.
 
-Another of its features its to keep the Game Loop running, the Game Loop is the constant calls to our game classes needed to update the drawing on the screen and the logic of the game.
+Another of its features is to keep the Game Loop running. The Game Loop is the constant calls to our game classes needed to update the drawing on the screen and the logic of the game.
 
 Usually the Game will start with the configuration of the Director in the AppDelegate class, and then pushing a new Scene so it can be presented on the screen.
 
 [tip It allows to pause the entire game on a single method call, this is very useful to handle game interruptions like Phone Calls or Text Messages.]
 
-[warning The Director cannot be initialized by itself, also only one instance can exist in the entire game lifecycle, please refer to the new method for more information.]
+[warning The Director cannot be initialized by itself. Also only one instance can exist in the entire game lifecycle, please refer to the new method for more information.]
 
 ### New
 Starts the Game default configuration and returns the instance of the Director:
@@ -67,7 +67,7 @@ The configuration also allow to enable different kind of debugging tools to help
 [warning These tools are not suitable for production environments, they should be turned off before deployment.]
 
 #### REPL
-As the same as in a regular UIKit application builded with RubyMotion, it will allow to select the Sprites with the cmd key + mouse click to make them available from the console:
+The same as in a regular UIKit application built with RubyMotion, it will allow to select the Sprites with the cmd key + mouse click to make them available from the console:
 
 ```ruby
 @director = Joybox::Configuration.setup do
@@ -166,7 +166,7 @@ Joybox.director.replace_scene game_scene
 [warning Do not call this method unless you have a Scene on the stack.]
 
 ### Start Animation
-Restarts the Game execution and the Game Loop, after their have been paused by the Stop Animation method:
+Restarts the Game execution and the Game Loop, after they have been paused by the Stop Animation method:
 
 ```
 Joybox.director.start_animation
@@ -179,7 +179,7 @@ Pauses the Game execution also the no more calls will be received on the Game Lo
 Joybox.director.stop_animation
 ```
 
-[note This method is usually used when a interruption happen, like a phone call, text message or going to background.]
+[note This method is usually used when an interruption happen, like a phone call, text message or going to background.]
 
 ### Purge Cached Data
 Destroys all the cached information of the game:
@@ -188,7 +188,7 @@ Destroys all the cached information of the game:
 Joybox.director.purge_cached_data
 ```
 
-[note This method is should be called when the application receives a memory warning notification.]
+[note This method should be called when the application receives a memory warning notification.]
 
 [warning The Sprite Frame cache should be purged manually if needed.]
 

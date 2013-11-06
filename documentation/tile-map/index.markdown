@@ -5,7 +5,7 @@ subtitle: Tiled Maps
 categories: documentation
 ---
 
-The TileMap class provides all the necessary functionality to display and manipulate a TMX Map. Once the map is loaded from a single file, it will create the appropriate tile and object layers allowing to access all of its properties, tiles and objects that has been previously created using a Map Editor.
+The TileMap class provides all the necessary functionality to display and manipulate a TMX Map. Once the map is loaded from a single file, it will create the appropriate tile and object layers allowing to access all of its properties, tiles and objects that have been previously created using a Map Editor.
 
 [more-information] For more information, see: [Tile Layer documentation page](../tile-layer).
 

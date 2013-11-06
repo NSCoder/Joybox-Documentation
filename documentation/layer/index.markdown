@@ -5,9 +5,9 @@ subtitle: Essentials
 categories: documentation
 ---
 
-The Layer class represents the drawing canvas for the Game, they can contain Sprites, Labels and other Layers like Menus as children. Also they receive the user interaction: like the touches on the screen on iOS or the mouse clicks on OSX.
+The Layer class represents the drawing canvas for the Game. They can contain Sprites, Labels and other Layers like Menus as children. Also they receive the user interaction: like the touches on the screen on iOS or the mouse clicks on OSX.
 
-Because of their characteristics the most of the Game logic must be placed inside a subclass of a Layer:
+Because of their characteristics most of the Game logic must be placed inside a subclass of a Layer:
 
 ```ruby
 class MotherShipLayer < Joybox::Core::Layer
@@ -18,7 +18,7 @@ end
 The previous example is the correct way of subclassing a Layer, also when inherited it will include all the needed modules to create a basic game. You can include the other modules as well using the regular include method.
 
 #### Tear Up & Tear Down
-The Layer provides two methods that need to be overrided in order to do a proper Game Logic initialization and clean up:
+The Layer provides two methods that need to be overridden in order to do a proper Game Logic initialization and clean up:
 
 ```ruby
 # Called when the Layer is presented on the screen
@@ -33,9 +33,9 @@ end
 ```
 
 #### Present a Layer
-In order to present a Layer on the screen its needed to be contained into a Scene, but if the Scene will be composed by only one Layer is unnecessary to create a subclass just to accomplish it. 
+In order to present a Layer on the screen it needs to be contained in a Scene, but if the Scene will be composed by only one Layer it is unnecessary to create a subclass just to accomplish it. 
 
-To make more easy to present a single Layer on the screen, it provides a method named scene, that will create an Scene for our layer automatically:
+To make it easier to present a single Layer on the screen, it provides a method named scene, that will create a Scene for our layer automatically:
 
 ```ruby
 class MotherShipLayer < Joybox::Core::Layer
