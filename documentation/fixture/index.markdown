@@ -7,7 +7,7 @@ categories: documentation
 
 The Fixture class provides the following physics properties to the Body class: Shape, Density, Friction and Restitution. Also they contain all the necessary information to simulate or not a collision.
 
-[warning The Fixture class cannot be instantiated by itself, it is required to be created using the Body's new fixture method.]
+[warning The Fixture class cannot be instantiated by itself, it is required to be created using the Body's new_fixture method.]
 
 ### ::CircleType
 ### ::EdgeType

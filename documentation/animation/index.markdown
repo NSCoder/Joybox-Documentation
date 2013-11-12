@@ -5,7 +5,7 @@ subtitle: Actions & Animations
 categories: documentation
 ---
 
-The Animation class provides the frame by frame animations to Sprites, the frames should be retrieved using a Sprite Sheet and a sprite frame Cache for optimal performance.
+The Animation class provides the frame by frame animations to Sprites. The frames should be retrieved using a Sprite Sheet and a sprite frame Cache for optimal performance.
 
 ```ruby
 SpriteFrameCache.frames.add file_name: 'animation.plist'
@@ -15,12 +15,12 @@ flying_frames = SpriteFrameCache.frames.where prefix: 'ship', suffix: '.png'
 animation = Animation.new frames: flying_frames
 ```
 
-In the previous example the sprite sheet plist file is loaded into the Sprite Frame Cache, and using its where method is retrieving an array of frames that will become the key-frames for the animation.
+In the previous example the sprite sheet plist file is loaded into the Sprite Frame Cache, and using its where method it retrieves an array of frames that will become the key-frames for the animation.
 
 [more-information] For more information, see: [Sprite Frame Cache documentation page](/sprite-frame-cache).
 
 #### Run a Animation
-The Animation cannot be run by itself in the Sprite, it needs to be wrapped into an Action, the following is the appropriate way of archiving this:
+The Animation cannot be run by itself in the Sprite, it needs to be wrapped into an Action. The following is the appropriate way of archiving this:
 
 ```ruby
 animation = Animation.new frames: flying_frames

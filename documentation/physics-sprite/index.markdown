@@ -7,7 +7,7 @@ categories: documentation
 
 The Physics Sprite class is the link between the Physics Environment and the Game Logic: being a subclass of Sprite and containing a physics Body, it combines the functionality of both.
 
-Basically it will update the position and rotation properties on both objects, so when for example the body receives a force the sprite will move as well. On the other side when the Sprite position is changed also the Body's.
+Basically it will update the position and rotation properties on both objects. So when for example the body receives a force, the sprite will move as well. On the other side when the Sprite position is changed also the Body's.
 
 Also it participates in the physics collision detection being passed as argument in the World's On Collide method and received as parameter in the method's block.
 

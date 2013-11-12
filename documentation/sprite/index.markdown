@@ -7,10 +7,10 @@ categories: documentation
 
 The class Sprite represents a two dimensional image that can be manipulated independently, so they can be moved, rotated or animated without affecting other Sprites in the same scene.
 
-They can be initialized in multiple ways: with a image file, a frame from a sprite sheet or using a Texture. The recommended way is always try to use a frame from a Sprite Sheet.
+They can be initialized in multiple ways: with an image file, a frame from a sprite sheet or using a Texture. The recommended way is always try to use a frame from a Sprite Sheet.
 
 #### Sprite Sheets
-When the sprite is created not using a Sprite Sheet they should be added into the parent class as follows:
+When the sprite is created not using a Sprite Sheet it should be added into the parent class as follows:
 
 ```ruby
 sprite = Sprite.new file_name: 'space_ship.png'

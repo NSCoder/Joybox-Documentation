@@ -7,7 +7,7 @@ categories: documentation
 
 The class AABB (Axis Aligned Bounding Box) represents a box aligned to the world axis. Generally the size of the box is the minimum bounds in which an object (either a Shape or a Fixture) can fit.
 
-One important thing to note is that even if the object rotates, the AABB will be always aligned to the world axis. In other words it can't rotate.
+One important thing to note is that even if the object rotates, the AABB will always be aligned to the world axis. In other words it can't rotate.
 
 [more-information]For more information, see: [Minimum bounding box](http://en.wikipedia.org/wiki/Minimum_bounding_box)
 

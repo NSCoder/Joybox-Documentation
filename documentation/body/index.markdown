@@ -10,15 +10,15 @@ The Body class represents a chunk of matter in the Physics Environment, and it h
 They are three different types of bodies:
 
 * Static
-The Static bodies does not react to gravity or forces and behave as if they have infinite mass, though they can be moved manually by changing its position instance variable.
+Static bodies do not react to gravity or forces and behave as if they have infinite mass, though they can be moved manually by changing the position instance variable.
 
 * Kinematic 
-Similar to the Static Bodies, the Kinematic Bodies do not react to forces, but they move according to their velocity properties. It is common to move them by changing their velocity, but that also can be archived through the position property.
+Similar to the Static Bodies, the Kinematic Bodies do not react to forces, but they move according to their velocity properties. It is common to move them by changing their velocity, but that also can be achieved through the position property.
 
 * Dynamic
 Different from the Static and Kinematic bodies, the Dynamic bodies have finite mass and react to forces. They can be moved by reacting to gravity, by applying a force, or by changing their velocity or position properties.
 
-[note When a Body is moved, it's complemented fixtures will move accordingly.]
+[note When a Body is moved, its complemented fixtures will move accordingly.]
 
 [warning The Body class cannot be instantiated by itself, it is required to be created using the World's new body method.]
 

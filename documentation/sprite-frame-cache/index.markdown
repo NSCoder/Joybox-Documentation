@@ -5,9 +5,9 @@ subtitle: Essentials
 categories: documentation
 ---
 
-The Sprite Frame Cache provides all the related information on every frame inside a sprite sheet, for this to be accomplished a sprite sheet frames file (usually a plist file) needs to be provided.
+The Sprite Frame Cache provides all the related information on every frame inside a sprite sheet. For this to be accomplished a sprite sheet frames file (usually a plist file) needs to be provided.
 
-It works together with the SpriteBatch class in order to support the sprite sheet functionality, for more information about how to load Sprites from a sprite sheet, see: [Sprite documentation page](../sprite).
+It works together with the SpriteBatch class in order to support the sprite sheet functionality. For more information about how to load Sprites from a sprite sheet, see: [Sprite documentation page](../sprite).
 
 [more-information] For more information, see: [SpriteBatch documentation page](../sprite-batch)
 

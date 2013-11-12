@@ -5,7 +5,7 @@ subtitle: User Interface
 categories: documentation
 ---
 
-The Menu Image class represents a menu item with an image as background, for presenting an instance of this class on the Screen is recommended to use the Menu class.
+The Menu Image class represents a menu item with an image as background. To present an instance of this class on the Screen is recommended to use the Menu class.
 
 [more-information] For more information, see: [Menu documentation page](../menu).
 

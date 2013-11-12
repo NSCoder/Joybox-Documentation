@@ -5,14 +5,14 @@ subtitle: Physics Environment
 categories: documentation
 ---
 
-The World class is the heart of all the physics environment because the Bodies are created, contain and destroyed inside it. Also it is responsible for all the aspects of the simulation, from defining the gravity to cast a ray to find fixtures.
+The World class is the heart of all the physics environment because the Bodies are created, contained and destroyed inside it. It is also responsible for all the aspects of the simulation, from defining the gravity to cast a ray to find fixtures.
 
 [more-information] For more information about the Bodies, see: [Body documentation page](../body).
 
 [more-information] For more information about the World, see: [Box2d Manual](http://box2d.org/manual.pdf)
 
 #### Physics Simulation
-In order to simulate the all the physics is required to execute the World's step method, which will update all the bodies and joints according to the gravity, forces or collisions. The usual way to step forward into the simulation is to use the game loop as follows:
+In order to simulate all the physics it is required to execute the World's step method, which will update all the bodies and joints according to the gravity, forces or collisions. The usual way to step forward into the simulation is to use the game loop as follows:
 
 ```ruby
 schedule_update do |dt|

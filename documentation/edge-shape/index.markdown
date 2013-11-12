@@ -5,11 +5,11 @@ subtitle: Physics Environment
 categories: documentation
 ---
 
-A Subclass of Shape that allows the Physics Environment to simulate a single line shapes.
+A Subclass of Shape that allows the Physics Environment to simulate single line shapes.
 
 [more-information] For more information, see: [Shape documentation page](../shape)
 
-[tip This Shapes are commonly used for simulating walls.]
+[tip Edge Shapes are commonly used for simulating walls.]
 
 ### New
 Returns a new instance of the EdgeShape class:

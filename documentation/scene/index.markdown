@@ -5,7 +5,7 @@ subtitle: Essentials
 categories: documentation
 ---
 
-The Scene classes encapsulates game functionally into stages or levels, providing the required independence in the different parts of the Game: like for example the Intro screen and the Game Level 1.
+The Scene class encapsulates game functionally into stages or levels, providing the required independence in the different parts of the Game: like for example the Intro screen and the Game Level 1.
 
 The Game flow is composed by many Scenes, but only one is active at the same time. In order to control which scene is presented the Director's push and pop scene are required:
 
@@ -23,7 +23,7 @@ win_cut_scene = WinCutScene.new
 director.push_scene win_cut_scene
 ```
 
-The previous example illustrates a typical Game flow, presenting first a Menu Scene, later the Game Scene and finally a Ending Scene.
+The previous example illustrates a typical Game flow, presenting first a Menu Scene, later the Game Scene and finally an Ending Scene.
 
 #### Composition
 The scenes can be composed by one or more layers, in order to accomplish this is required to subclass the Scene in the following way:

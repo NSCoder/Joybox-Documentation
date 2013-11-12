@@ -5,7 +5,7 @@ subtitle: User Interface
 categories: documentation
 ---
 
-The Menu Label class represents a menu item with a label, for presenting an instance of this class on the Screen is recommended to use the Menu class.
+The Menu Label class represents a menu item with a label. To present an instance of this class on the Screen it is recommended to use the Menu class.
 
 [more-information] For more information, see: [Menu documentation page](../menu).
 

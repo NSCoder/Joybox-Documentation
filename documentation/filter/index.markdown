@@ -5,10 +5,10 @@ subtitle: Physics Environment
 categories: documentation
 ---
 
-The Filter class allows to control which Fixtures should collide with each other, using its 16 bit integers we can set up different scenarios for a collision (actually just 16 different scenarios).
+The Filter class allows you to control which Fixtures should collide with each other. Using its 16 bit integers we can set up different scenarios for a collision (actually just 16 different scenarios).
 
 #### Category and Mask Bits
-The category_bits property defines the type of the object, and the mask_bits set with which type objects it collides, here it is an example:
+The category_bits property defines the type of the object, and the mask_bits set with which type objects it collides, here is an example:
 
 ```ruby
 space_ship_filter.category_bits = 0x0002
@@ -27,7 +27,7 @@ asteroids_mask_bits = space_ship_filter.mask_bits
 collide = (space_ship_mask_bits & asteroids_category_bits) != 0 && (space_ship_category_bits & asteroids_mask_bits) != 0
 ```
 
-In the previous example the Space Ship's (category: 0x0002) cannot collide with each other, only with Asteroid's (category: 0x0004). Thats why Space Ships has as mask the Asteroid's category and the other way around. Finally you may notice that the Asteroid's can collide with each other as well.
+In the previous example the Space Ships (category: 0x0002) cannot collide with each other, only with Asteroids (category: 0x0004). Thats why Space Ships has as mask the Asteroid's category and the other way around. Finally you may notice that the Asteroids can collide with each other as well.
 
 [warning The collision Category Bits and Mask Bits must be satisfied in both fixtures.]
 

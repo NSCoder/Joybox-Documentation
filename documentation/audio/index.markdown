@@ -7,7 +7,7 @@ categories: documentation
 
 Provides support methods for controlling the audio playback of the Game. 
 
-[tip You can mute the BackgroundAudio and AudioEffects of the all game using the Audio mute method.]
+[tip You can mute the BackgroundAudio and AudioEffects of all the game using the Audio mute method.]
 
 ### Mute
 Mutes all the game audio:
