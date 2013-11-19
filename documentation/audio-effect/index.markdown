@@ -7,21 +7,21 @@ categories: documentation
 
 Provides the reproduction of audio effects for Game Events. The Audio Files are loaded using an event key, which later will be used to play the audio effect. It is recommended to use 16-bit mono wave files for uncompressed audio and IMA4 for lossy compressed audio, but MP3 is also supported.
 
-Although the AudioEffect class has its own stop and volume functionality, it can be overridden using the mute and enable methods of the Audio Module.  
+Although the AudioEffect class has its own stop and volume functionality, it can be overridden using the mute and enable methods of the Audio Module.
 
 
 ### New
 Returns a new instance of the AudioEffect class:
 
 ```ruby
-audio_effect = AudioEfect.new
+audio_effect = AudioEffect.new
 ```
 
 ### Add
 Loads a new audio file with its event key:
 
 ```ruby
-audio_effect.add(:light_speed_jump, 'light_speed_jump.caf')
+audio_effect.add(effect: :light_speed_jump, file_name: 'light_speed_jump.caf')
 ```
 
 ### []
