@@ -8,7 +8,7 @@ round: 1
 kind: Tutorial
 subject: Game Architecture
 summary: "In this tutorial you will create your first Joybox project, then build an amazing main menu screen for your game and finally use a Scene for presenting it on the screen."
-last-round: true
+last-round: false
 ---
 
 ![Joybox Asteroids](../../../images/learn-this/easy/round-1/game-screen.png)
