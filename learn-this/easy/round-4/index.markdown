@@ -152,7 +152,7 @@ This two files are our sprite sheet, to continue please create a new folder name
 
 ### Use the Sprite Sheet
 
-In order to use our new sprite sheet we have to tell the game which sprite sheet to load and its respective metadata, for this two objects are needed: **SpriteBatch** and **SpriteFrameCache**. We can start implementing it by open the **game_layer.rb** and addign the following:
+In order to use our new sprite sheet we have to tell the game which sprite sheet to load and its respective metadata, for this two objects are needed: **SpriteBatch** and **SpriteFrameCache**. We can start implementing it by opening the **game_layer.rb** and adding the following:
 
 ```ruby
 class GameLayer < Joybox::Core::Layer
