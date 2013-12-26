@@ -137,7 +137,7 @@ We need to change two things on the **Publish Settings**, the first is on the bo
 
 ![Coordinates Format](../../../images/learn-this/easy/round-4/coordinates-format.png)
 
-The second is on the left part change the **target name** from default to **sprite_sheet** by doble clicking it:
+The second is on the left part change the **target name** from default to **sprite_sheet** by double clicking it:
 
 ![Target](../../../images/learn-this/easy/round-4/target.png)
 
