@@ -92,7 +92,7 @@ class GameScene < Joybox::Core::Scene
 end
 ```
 
-Well is not a mistery that if we run the game at this time we should not see any diference at all, so lets add a sprite to the **game_layer.rb**:
+If we run the game at this time we should not see any difference at all, so lets add a sprite to the **game_layer.rb**:
 
 ```ruby
 def on_enter
