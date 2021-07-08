@@ -92,7 +92,7 @@ class GameScene < Joybox::Core::Scene
 end
 ```
 
-Well is not a mistery that if we run the game at this time we should not see any diference at all, so lets add a sprite to the **game_layer.rb**:
+If we run the game at this time we should not see any difference at all, so lets add a sprite to the **game_layer.rb**:
 
 ```ruby
 def on_enter
@@ -137,7 +137,7 @@ We need to change two things on the **Publish Settings**, the first is on the bo
 
 ![Coordinates Format](../../../images/learn-this/easy/round-4/coordinates-format.png)
 
-The second is on the left part change the **target name** from default to **sprite_sheet** by doble clicking it:
+The second is on the left part change the **target name** from default to **sprite_sheet** by double clicking it:
 
 ![Target](../../../images/learn-this/easy/round-4/target.png)
 
@@ -152,7 +152,7 @@ This two files are our sprite sheet, to continue please create a new folder name
 
 ### Use the Sprite Sheet
 
-In order to use our new sprite sheet we have to tell the game which sprite sheet to load and its respective metadata, for this two objects are needed: **SpriteBatch** and **SpriteFrameCache**. We can start implementing it by open the **game_layer.rb** and addign the following:
+In order to use our new sprite sheet we have to tell the game which sprite sheet to load and its respective metadata, for this two objects are needed: **SpriteBatch** and **SpriteFrameCache**. We can start implementing it by opening the **game_layer.rb** and adding the following:
 
 ```ruby
 class GameLayer < Joybox::Core::Layer
